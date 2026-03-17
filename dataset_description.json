@@ -1,0 +1,21 @@
+{
+    "Name": "Neural Spiking Data in Rats Responding to Optogenetic Stimulation and Transcranial Focused Ultrasound Stimulation in the Somatosensory Cortex",
+    "BIDSVersion": "1.10",
+    "HEDVersion": "8.3.0",
+    "Description": "In these recordings, we stimulate rats that were injected with AAV virus to optogenetically tag for CaMKII  to distinguish between excitatory pyramidal neurons and inhibitory interneurons. We alternate between stimulating them optogenetically in order to tag the neuronal subtype and testing different PRFs (pulse repetition frequencies) and pulse durations of ultrasound stimulation using a 128-element random array ultrasound transducer to stimulate the somatosensory cortex. Electrophysiological recordings were acquired using 32-channel NeuroNexus electrodes (Model: A1x32-Poly3-10mm-50-177-A32), surgically inserted into the rat brain. Ultrasound stimulation is delivered every 2.5 seconds with a 10% jitter, and each recording has 500 trials. Optogenetic stimulation was delivered at 120A for 10ms. The PRFs tested were 30 Hz, 300 Hz, 1500 Hz, 3000 Hz, and 4500 Hz, with pulse durations including 4, 40, 200, and 400 microseconds, and a 67 millisecond ultrasound duration. \n\nFile Information: All subjects were male Wistar rats. Ultrasound test files are named in the format SubjectName_PRF_PulseDuration_UltrasoundDuration_Voltage. Optogenetics test files are named in the format SubjectName_opto_Current_Duration_OrderWithinUltrasoundPRFtests .Each file contains spike time data with the time series data for the onset of each trial of ultrasound stimulation or optogenetic stimulation.",
+    "DatasetType": "raw",
+    "Authors": [
+        "Gao, Huan",
+        "Yu, Kai",
+        "He, Bin"
+    ],
+    "License": "CC-BY-4.0",
+    "GeneratedBy": [
+        {
+            "Name": "nwb2bids",
+            "Version": "0.9.1.dev27+gf0fb7253c",
+            "Description": "Tool to reorganize NWB files into a BIDS directory layout.",
+            "CodeURL": "https://github.com/con/nwb2bids"
+        }
+    ]
+}
